@@ -1,4 +1,4 @@
-#!/bin/init
+#!/bin/bash
 # Exit script on error
 set -e
 
