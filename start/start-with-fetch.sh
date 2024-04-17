@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define variables
-identity_keypair="validator-keypair.json"
-vote_pubkey="vote-account-keypair.json"
+identity_keypair="icex1C6pnZxznQWiHZZANjGU8nZ8kNquFnjyY7XXrXE.json"
+vote_pubkey="votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj.json"
 genesis_hash="5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d"
 jito_block_engine_url="https://frankfurt.mainnet.block-engine.jito.wtf"
 jito_relayer_url="http://frankfurt.mainnet.relayer.jito.wtf:8100"
@@ -14,8 +14,6 @@ commission_bps=100
 solana-validator \
     --identity "$identity_keypair" \
     --vote-account "$vote_pubkey" \
-    --known-validator 5D1fNXzvv5NjV1ysLjirC4WY92RNsVH18vjmcszZd8on \
-    --known-validator 7XSY3MrYnK8vq693Rju17bbPkCN3Z7KvvfvJx4kdrsSY \
     --only-known-rpc \
     --log /home/sol/solana-validator.log \
     --ledger /mnt/ledger \
