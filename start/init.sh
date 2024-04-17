@@ -2,8 +2,8 @@
 # Exit script on error
 set -e
 
-# Initialize the TAG variable
-TAG=""
+# Initialize the TAG variable from the environment or use a default if not set
+TAG="${TAG:-}"
 
 # Parse command-line options
 while getopts "t:" opt; do
