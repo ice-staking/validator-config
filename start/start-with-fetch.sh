@@ -19,6 +19,11 @@ solana-validator \
     --ledger /mnt/ledger \
     --accounts /accounts \
     --rpc-port 8899 \
+        --known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
+    --known-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
+    --known-validator DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ \
+    --known-validator CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S \
+    --known-validator CMPSSdrTnRQBiBGTyFpdCc3VMNuLWYWaSkE8Zh5z6gbd \
     --dynamic-port-range 8000-8020 \
     --entrypoint entrypoint.mainnet-beta.solana.com:8001 \
     --entrypoint entrypoint2.mainnet-beta.solana.com:8001 \
