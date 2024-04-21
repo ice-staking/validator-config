@@ -8,7 +8,7 @@ jito_block_engine_url="https://frankfurt.mainnet.block-engine.jito.wtf"
 jito_relayer_url="http://frankfurt.mainnet.relayer.jito.wtf:8100"
 jito_shred_receiver_address="145.40.93.84:1002"
 ntp="ntp.frankfurt.jito.wtf"
-commission_bps=100
+commission_bps=0
 
 # Execute the Solana validator command
 solana-validator \
