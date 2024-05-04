@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define variables
-identity_keypair="icex1C6pnZxznQWiHZZANjGU8nZ8kNquFnjyY7XXrXE.json"
-vote_pubkey="votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj.json"
+identity_keypair="/home/sol/icex1C6pnZxznQWiHZZANjGU8nZ8kNquFnjyY7XXrXE.json"
+vote_pubkey="/home/sol/votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj.json"
 genesis_hash="5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d"
 jito_block_engine_url="https://frankfurt.mainnet.block-engine.jito.wtf"
 jito_relayer_url="http://frankfurt.mainnet.relayer.jito.wtf:8100"
