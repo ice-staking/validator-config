@@ -16,8 +16,8 @@ solana-validator \
     --vote-account "$vote_pubkey" \
     --only-known-rpc \
     --log /home/sol/solana-validator.log \
-    --ledger /mnt/ledger \
-    --accounts /accounts \
+  --ledger /mnt/ledger \
+    --accounts /mnt/accounts \
     --rpc-port 8899 \
         --known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
     --known-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
