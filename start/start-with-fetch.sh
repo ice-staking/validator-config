@@ -11,7 +11,7 @@ ntp="ntp.frankfurt.jito.wtf"
 commission_bps=0
 
 # Execute the Solana validator command
-solana-validator \
+/home/sol/.local/share/solana/install/releases/$TAG/bin/solana-validator \
     --identity "$identity_keypair" \
     --vote-account "$vote_pubkey" \
     --only-known-rpc \
