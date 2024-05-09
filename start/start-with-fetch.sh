@@ -43,7 +43,7 @@ elif [ "$cluster" = "testnet" ]; then
     jito_shred_receiver_address="141.98.216.97:1002"
     ntp="ntp.dallas.jito.wtf"
     ledger_dir="/mnt/ledger"
-    accounts_dir="/accounts"
+       accounts_dir="/mnt/accounts"
     log_file="/home/sol/solana-validator.log"
     entrypoints=(
         "entrypoint.testnet.solana.com:8001"
