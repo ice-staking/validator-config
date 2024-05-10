@@ -34,11 +34,11 @@ cd jito-solana
 
 # Pull the latest changes from the repository
 echo "Pulling latest changes for 'jito-solana'..."
-git pull
+git fetch --tags
 
 # Checkout the specified tag
 echo "Checking out tag '$TAG'..."
-git checkout tags/$TAG
+git switch tags/$TAG --detach
 
 # Update and initialize submodules recursively
 echo "Updating and initializing submodules recursively..."

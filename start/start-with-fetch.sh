@@ -37,6 +37,7 @@ if [ "$cluster" = "mainnet-beta" ]; then
     identity_keypair="/home/sol/icex1C6pnZxznQWiHZZANjGU8nZ8kNquFnjyY7XXrXE.json"
     vote_pubkey="/home/sol/votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj.json"
 
+
 elif [ "$cluster" = "testnet" ]; then
     jito_block_engine_url="https://ny.testnet.block-engine.jito.wtf"
     jito_relayer_url="http://nyc.testnet.relayer.jito.wtf:8100"
@@ -61,8 +62,8 @@ elif [ "$cluster" = "testnet" ]; then
     known_validator_2='7XSY3MrYnK8vq693Rju17bbPkCN3Z7KvvfvJx4kdrsSY'
     known_validator_3='Ft5fbkqNa76vnsjYNwjDZUXoTWpP7VYm3mtsaQckQADN'
     known_validator_4='9QxCLckBiJc783jnMvXZubK4wH86Eqqvashtrwvcsgkv'
-    identity_keypair="/home/sol/icex1C6pnZxznQWiHZZANjGU8nZ8kNquFnjyY7XXrXE.json"
-    vote_pubkey="/home/sol/votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj.json"
+    identity_keypair="/home/sol/iceTv97XsSTXLqrJvYMf38uqXCd7KaK4NCEFSXSArWq.json"
+    vote_pubkey="/home/sol/vottbnQyoMRUMXudohHSdoeQLDESiUh16YEKHm59Vdu.json"
 else
     echo "Invalid cluster type: $cluster"
     echo "Please choose either 'mainnet-beta' or 'testnet'"
