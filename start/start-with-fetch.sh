@@ -80,7 +80,7 @@ fi
     --accounts "$accounts_dir" \
     --snapshots "$accounts_dir" \
     --rpc-port 8899 \
-    "${entrypoints[@]/#/--entrypoint }" \
+    ${entrypoints[@]/#/--entrypoint } \
     --expected-genesis-hash "$genesis_hash" \
     --limit-ledger-size \
     --private-rpc \
