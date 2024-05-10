@@ -49,8 +49,6 @@ elif [ "$cluster" = "testnet" ]; then
         "entrypoint.testnet.solana.com:8001"
         "entrypoint2.testnet.solana.com:8001"
         "entrypoint3.testnet.solana.com:8001"
-        "entrypoint4.testnet.solana.com:8001"
-        "entrypoint5.testnet.solana.com:8001"
     )
     tip_payment_pubkey="DCN82qDxJAQuSqHhv2BJuAgi41SPeKZB5ioBCTMNDrCC"
     tip_distribution_pubkey="F2Zu7QZiTYUhPd7u9ukRVwxh7B71oA3NMJcHuCHc29P2"
