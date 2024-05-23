@@ -37,14 +37,13 @@ if [ "$cluster" = "mainnet-beta" ]; then
     identity_keypair="/home/sol/icex1C6pnZxznQWiHZZANjGU8nZ8kNquFnjyY7XXrXE.json"
     vote_pubkey="/home/sol/votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj.json"
 
-
 elif [ "$cluster" = "testnet" ]; then
     jito_block_engine_url="https://ny.testnet.block-engine.jito.wtf"
     jito_relayer_url="http://nyc.testnet.relayer.jito.wtf:8100"
     jito_shred_receiver_address="141.98.216.97:1002"
     ntp="ntp.dallas.jito.wtf"
     ledger_dir="/mnt/ledger"
-       accounts_dir="/mnt/accounts"
+    accounts_dir="/mnt/accounts"
     log_file="/home/sol/solana-validator.log"
     entrypoints=(
         "entrypoint.testnet.solana.com:8001"
@@ -69,7 +68,7 @@ else
 fi
 
 # Execute the Solana validator command
-/home/sol/.local/share/solana/install/releases/$TAG/bin/solana-validator \
+/home/sol/.local/share/solana/install/active_release/bin/solana-validator \
     --identity "$identity_keypair" \
     --vote-account "$vote_pubkey" \
     --only-known-rpc \
@@ -78,10 +77,11 @@ fi
     --accounts "$accounts_dir" \
     --snapshots "$accounts_dir" \
     --rpc-port 8899 \
-    ${entrypoints[@]/#/--entrypoint } \
+   ${entrypoints[@]/#/--entrypoint } \
     --expected-genesis-hash "$genesis_hash" \
     --limit-ledger-size \
     --private-rpc \
+     --no-snapshot-fetch \
     --tip-payment-program-pubkey "$tip_payment_pubkey" \
     --tip-distribution-program-pubkey "$tip_distribution_pubkey" \
     --merkle-root-upload-authority "$merkle_root_authority" \
