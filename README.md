@@ -22,4 +22,4 @@ Please migrate to the new repository for the latest updates, scripts, and docume
 
 ## License
 
-[MIT](./LICENSE)
+[LICENSE](./LICENSE)
